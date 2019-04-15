@@ -1,18 +1,18 @@
 .hero{
-    background: navy;
-    height: 500px;
+   height: 500px;
 }
 .logo{
     font-family: "Fredoka One";
     font-size: 3.6rem;
+    color: limegreen;
     
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: navy;
-    padding: 20px
+   
+    padding: 20px;
 }
 nav{
     display: flex;
@@ -26,4 +26,87 @@ nav{
         margin: 10px
         
     }
+}
+.content-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .center();
+    margin: 20px
+}
+.feature-img{
+    width: 400px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.content{
+    width: 400px;
+    padding: 10px;
+}
+.content-top-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    .center();
+    margin: 20px
+}
+
+.testimonials{
+    
+    font-size: 1.6rem;
+    .center();
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    
+    .quote{
+        text-align: center;
+        width: 450px;
+        padding: 10px;
+        font-size: 2rem;
+        .center();
+    }
+    
+}
+.text-centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4.5rem;
+        color: white;
+        .center();
+        flex-direction: column;
+        width: 90%;
+      }
+
+.hero-img{
+    // height: 900px;
+    // overflow: hidden;
+}
+
+.hero-btn{
+    .center();
+    .custom-btn(200px, limegreen, white);
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+    }
+.content-middle{
+    .center();
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    background-color: honeydew;
+    .content-box{
+        width: 250px;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
 }

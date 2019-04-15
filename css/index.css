@@ -127,18 +127,17 @@ table {
   border-spacing: 0;
 }
 .hero {
-  background: navy;
   height: 500px;
 }
 .logo {
   font-family: "Fredoka One";
   font-size: 3.6rem;
+  color: limegreen;
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: navy;
   padding: 20px;
 }
 nav {
@@ -153,6 +152,96 @@ nav a {
   text-decoration: none;
   margin: 10px;
 }
+.content-top {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.feature-img {
+  width: 400px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.content {
+  width: 400px;
+  padding: 10px;
+}
+.content-top-2 {
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.testimonials {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+.testimonials .quote {
+  text-align: center;
+  width: 450px;
+  padding: 10px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.hero-btn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 200px;
+  background-color: limegreen;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 30px;
+}
+.content-middle {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+  background-color: honeydew;
+}
+.content-middle .content-box {
+  width: 250px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -161,14 +250,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Chivo', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Fredoka One', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -177,6 +266,7 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3,
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -193,6 +283,10 @@ img {
 .container {
   margin: 0 auto;
   font-size: 62.5%;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .nav {
   display: flex;
