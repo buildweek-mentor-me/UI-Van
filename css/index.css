@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container .hero {
-  height: 500px;
-}
 .container .logo {
   font-family: "Fredoka One";
   font-size: 3.6rem;
@@ -190,6 +187,7 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  line-height: 1.5;
   width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -213,13 +211,12 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5rem;
-  color: white;
+  color: forestgreen;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 90%;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media (max-width: 500px) {
   .container .text-centered {
@@ -227,11 +224,21 @@ table {
   }
 }
 .container .hero {
+  height: 500px;
   background: url(img/business-mentoring-hero.jpg) no-repeat;
 }
 @media (max-width: 500px) {
   .container .hero {
     background: url(img/business-mentoring-hero-mobile.jpg) no-repeat;
+  }
+}
+.container .hero-about {
+  height: 500px;
+  background: url(img/work.jpg) no-repeat;
+}
+@media (max-width: 500px) {
+  .container .hero-about {
+    background: url(img/work-mobile.jpg) no-repeat;
   }
 }
 .container .hero-btn {
@@ -249,6 +256,11 @@ table {
   vertical-align: middle;
   text-align: center;
   margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .container .hero-btn {
+    vertical-align: top;
+  }
 }
 .container .content-middle {
   justify-content: center;
@@ -270,11 +282,83 @@ table {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.container .learn-more-btn {
+  width: 150px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
 .container footer {
   text-align: center;
   font-size: 1.8rem;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.container .name {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.container .member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px dashed gray;
+  margin: 20px;
+}
+.container .member .content {
+  font-size: 2rem;
+}
+.container .team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  background-color: honeydew;
+}
+.container .emailList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .emailList .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 35px;
+}
+.container .emailList h3 {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+.container .emailList form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .emailList form button {
+  width: 200px;
+  height: 35px;
+}
+.container .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: honeydew;
+  padding-top: 30px;
 }
 * {
   box-sizing: border-box;
