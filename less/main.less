@@ -1,0 +1,253 @@
+.container{
+    .logo{
+         font-family: "Fredoka One";
+         font-size: 3.6rem;
+         color: limegreen;
+         
+     }
+     header{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+        
+         padding: 20px;
+     }
+     nav{
+         display: flex;
+         flex-direction: flex-end;
+         align-items: center;
+         justify-content: space-evenly;
+         a{
+             font-size: 2rem;
+             color: gray;
+             text-decoration: none;
+             margin: 10px;
+             flex-wrap: wrap;
+             
+             @media @mobile{
+                 font-size: 1.4rem;
+                 margin: 5px;
+             }
+         }
+     }
+     .content-top{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         .center();
+         margin: 20px
+     }
+     .feature-img{
+         width: 400px;
+         padding: 5px;
+         border-radius: 50%;
+     }
+     .content{
+         width: 400px;
+         padding: 10px;
+     }
+     .content-top-2{
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row-reverse;
+         .center();
+         margin: 20px
+     }
+     
+     .testimonials{
+         
+         font-size: 1.6rem;
+         .center();
+         flex-direction: column;
+         line-height: 1.5;
+         width: 100%;
+         margin-top: 40px;
+         margin-bottom: 40px;
+         background-color: honeydew;
+         h2{
+             margin-top: 30px;
+         }
+    
+         .quote{
+            text-align: center;
+            width: 450px;
+            padding: 10px;
+            font-size: 2.0rem;
+            .center();
+         }
+    }
+     .text-centered {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 4.5rem;
+             color: forestgreen;
+             .center();
+             flex-direction: column;
+             width: 90%;
+            //  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+             @media @mobile{
+                 font-size: 2.4rem;
+     
+             }
+           }
+     
+     .hero{
+         // height: 900px;
+         // overflow: hidden;
+         height: 500px;
+         background: url(img/business-mentoring-hero.jpg) no-repeat;
+         @media @mobile{
+             background: url(img/business-mentoring-hero-mobile.jpg) no-repeat; 
+         }
+     }
+     .hero-about{
+        // height: 900px;
+        // overflow: hidden;
+        height: 500px;
+        background: url(img/work.jpg) no-repeat;
+        @media @mobile{
+            background: url(img/work-mobile.jpg) no-repeat; 
+        }
+    }
+     
+     .hero-btn{
+         .center();
+         .custom-btn(200px, limegreen, white);
+         vertical-align: middle;
+         text-align: center;
+         margin-top: 30px;
+         @media @mobile{
+             vertical-align: top;
+         }
+         }
+     .content-middle{
+         .center();
+         font-size: 1.6rem;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         height: 200px;
+         background-color: honeydew;
+         .content-box{
+             width: 250px;
+             height: 125px;
+             display: flex;
+             flex-direction: column;
+             align-content: center;
+             justify-content: center;
+             margin-top: 30px;
+             margin-bottom: 20px;
+         }
+         
+     }
+     .learn-more-btn{
+         width: 150px;
+         height: 35px;
+         border: 1px solid gray;
+         border-radius: 5px;
+         .center();
+         font-size: 1.6rem;
+     }
+     footer{
+         text-align: center;
+         font-size: 1.8rem;
+         margin-top: 30px;
+         margin-bottom: 30px;
+     }
+     .hero-img{
+         
+     }
+     .name{
+              
+        
+
+     }
+     .member{
+         .center();
+         flex-direction: row;
+         flex-wrap: wrap;
+        width: 400px;
+        border-radius: 10px;
+        border: 1px dashed gray;
+        margin: 20px;
+        .content{
+           
+            font-size: 2.0rem;
+        }
+    }
+    .team{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        background-color: honeydew;
+    }
+     .emailList{
+         .center();
+         flex-direction: column;
+         .email{
+             .center();
+             width: 200px;
+             height: 35px;
+         }
+         h3{
+             display: block;
+             .center();
+             margin: 10px 20px;
+         }
+         form{
+             .center();
+             button{
+                width: 200px;
+                height: 35px;
+             }
+         }
+     }
+
+     .heading{
+         .center();
+         background-color: honeydew;
+         padding-top: 30px;
+     }
+
+     
+      
+      /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+}

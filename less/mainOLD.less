@@ -1,0 +1,139 @@
+.container{
+    .hero{
+        height: 500px;
+     }
+     .logo{
+         font-family: "Fredoka One";
+         font-size: 3.6rem;
+         color: limegreen;
+         
+     }
+     header{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+        
+         padding: 20px;
+     }
+     nav{
+         display: flex;
+         flex-direction: flex-end;
+         align-items: center;
+         justify-content: space-evenly;
+         a{
+             font-size: 2rem;
+             color: gray;
+             text-decoration: none;
+             margin: 10px;
+             flex-wrap: wrap;
+             
+             @media @mobile{
+                 font-size: 1.4rem;
+                 margin: 5px;
+             }
+         }
+     }
+     .content-top{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         .center();
+         margin: 20px
+     }
+     .feature-img{
+         width: 400px;
+         padding: 5px;
+         border-radius: 50%;
+     }
+     .content{
+         width: 400px;
+         padding: 10px;
+     }
+     .content-top-2{
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row-reverse;
+         .center();
+         margin: 20px
+     }
+     
+     .testimonials{
+         
+         font-size: 3.0rem;
+         .center();
+         flex-direction: column;
+         width: 100%;
+         margin-top: 40px;
+         margin-bottom: 40px;
+         background-color: honeydew;
+         h2{
+             margin-top: 30px;
+         }
+    
+         .quote{
+            text-align: center;
+            width: 450px;
+            padding: 10px;
+            font-size: 3.0rem;
+            .center();
+         }
+    }
+     .text-centered {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             font-size: 4.5rem;
+             color: white;
+             .center();
+             flex-direction: column;
+             width: 90%;
+             @media @mobile{
+                 font-size: 2.4rem;
+     
+             }
+           }
+     
+     .hero{
+         // height: 900px;
+         // overflow: hidden;
+         background: url(img/business-mentoring-hero.jpg) no-repeat;
+         @media @mobile{
+             background: url(img/business-mentoring-hero-mobile.jpg) no-repeat; 
+         }
+     }
+     
+     .hero-btn{
+         .center();
+         .custom-btn(200px, limegreen, white);
+         vertical-align: middle;
+         text-align: center;
+         margin-top: 30px;
+         }
+     .content-middle{
+         .center();
+         font-size: 1.6rem;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         height: 200px;
+         background-color: honeydew;
+         .content-box{
+             width: 250px;
+             height: 125px;
+             display: flex;
+             flex-direction: column;
+             align-content: center;
+             justify-content: center;
+             margin-top: 30px;
+             margin-bottom: 20px;
+         }
+         
+     }
+     footer{
+         text-align: center;
+         font-size: 1.8rem;
+         margin-top: 30px;
+         margin-bottom: 30px;
+     }
+}

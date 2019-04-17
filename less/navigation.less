@@ -1,0 +1,25 @@
+// Navigation Styles here
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed @navigation-border;
+    @media @mobile{
+        flex-direction: column;
+    }
+    
+    h1{
+        .custom-layout(flex-start, center);
+    }    
+    nav{
+        .custom-layout(flex-end, center);
+       a{
+           font-size: 1.6rem;
+           margin-left: 20px;
+           text-decoration: none;
+           color: black;
+  
+        }
+    }
+    
+}

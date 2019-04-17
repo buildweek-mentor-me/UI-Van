@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MentorMe
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script  >
+            function openCity(evt, cityName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+            
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+            
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+            
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Chivo|Fredoka+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+       
+                <header>
+                     <div class="logo">MentorMe</div>
+                     <nav>
+                         <a href="index.html">Home</a>
+                         <a href="#">Features</a>
+                         <a href="about.html">About</a>
+                     </nav>
+                </header>
+                
+                <div class="text-centered">
+                        About Us 
+                        
+                </div>
+                 <img class="hero-img" src="img/work.jpg" alt="Mentor Me"> 
+                <div class="heading">
+                        <h2>Our Team</h2>
+                </div>
+                 
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'Nikita')">Nikita</button>
+                  <button class="tablinks" onclick="openCity(event, 'Dylan')">Dylan</button>
+                  <button class="tablinks" onclick="openCity(event, 'Guillaume')">Guillaume</button>
+                  <button class="tablinks" onclick="openCity(event, 'Van')">Van</button>
+                  <button class="tablinks" onclick="openCity(event, 'Steve')">Steve</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="Nikita" class="tabcontent">
+                  <div class="name">Nikita Thomas, Team Lead</div>
+                  <div class="profile">London is the capital city of England.</div>
+                </div>
+                
+                <div id="Dylan" class="tabcontent">
+                  <div class="name">Dlyan Dislers, Backend</div>
+                  <div class="profile">Paris is the capital of France.</div> 
+                </div>
+                     
+                <div id="Guillaume" class="tabcontent">
+                  <div class="name">Guillaume Savy</div>
+                  <div class="profile">Tokyo is the capital of Japan.</div>
+                </div>
+                <div id="Van" class="tabcontent">
+                  <div class="name">Tokyo is the capital of Japan.</div>
+                </div>
+                <div id="Steve" class="tabcontent">
+                  <div class="name">Van Jordan</div>
+                  <div class="profile">Tokyo is the capital of Japan.</div>
+                </div>
+                
+
+                
+                
+                <footer>
+                   &copy; Copyright 2019 MentorMe - A Lambda School Project
+                </footer>
+        </div>
+    </body>
+</html>

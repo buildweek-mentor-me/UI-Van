@@ -1,0 +1,34 @@
+// Mixins in here
+.bordered() {
+    padding: 20px 0;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+  }
+  
+  .center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-btn(@width, @bgColor, @fontColor) {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    width: @width;
+    background-color: @bgColor;
+    color: @fontColor;
+      
+    
+  }
+  .custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
