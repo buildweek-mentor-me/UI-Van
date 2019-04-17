@@ -26,11 +26,8 @@ const git = document.querySelector('.github');
 
 tablinks.forEach(function(tablink){
   people.forEach(function(person){
-    
     tablink.addEventListener('click', function(event){
-      
-      
-      if(event.target.classList[1] === person.firstName){
+     if(event.target.classList[1] === person.firstName){
         fullname.textContent = person.firstName + " " + person.lastName;
         role.textContent = person.role;
         profile.textContent = person.profile;
@@ -63,6 +60,8 @@ steve.addEventListener('click', function(event){
       dylan.addEventListener('click', function(event){
         location.href = "https://github.com/dislersd";
         });
+
+// rollover effect for github buttons on about page
 const githubBtns = document.querySelectorAll('.github-btn');
 githubBtns.forEach(function(btn){
   btn.addEventListener('mouseover', function(event){
@@ -70,5 +69,25 @@ githubBtns.forEach(function(btn){
   });
   btn.addEventListener('mouseout', function(event){
     event.target.style.backgroundColor = 'forestgreen';
+  });
+});
+
+//prevent e-newsletter form from submitting
+const form = document.querySelector('.subscribe')
+form.addEventListener('click', function(event){
+  event.preventDefault();
+});
+
+//add rollover effect to buttons
+const buttons = document.querySelectorAll('.learn-more-btn');
+buttons.forEach(function(btn){
+  btn.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "black";
+    event.target.style.fontColor = "white";
+  });
+
+  btn.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "white";
+    event.target.style.fontColor = "black";
   });
 });
