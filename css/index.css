@@ -318,6 +318,7 @@ table {
   border-radius: 10px;
   border: 1px dashed gray;
   margin: 20px;
+  padding: 20px;
 }
 .container .member .content {
   font-size: 2rem;
