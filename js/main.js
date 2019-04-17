@@ -26,9 +26,9 @@ const git = document.querySelector('.github');
 
 tablinks.forEach(function(tablink){
   people.forEach(function(person){
-    console.log(Object.values(person));
+    
     tablink.addEventListener('click', function(event){
-      console.log(event.target.classList[1]);
+      
       
       if(event.target.classList[1] === person.firstName){
         fullname.textContent = person.firstName + " " + person.lastName;
@@ -52,14 +52,23 @@ van.addEventListener('click', function(event){
 location.href = "https://github.com/vanman9599";
 });
 steve.addEventListener('click', function(event){
-  location.href = "https://github.com/vanman9599";
+  location.href = "https://github.com/greenhornsr";
   });
   nikita.addEventListener('click', function(event){
-    location.href = "https://github.com/vanman9599";
+    location.href = "https://github.com/OmegaWulf";
     });
     guillaume.addEventListener('click', function(event){
-      location.href = "https://github.com/vanman9599";
+      location.href = "https://github.com/guillsav";
       });
       dylan.addEventListener('click', function(event){
-        location.href = "https://github.com/vanman9599";
+        location.href = "https://github.com/dislersd";
         });
+const githubBtns = document.querySelectorAll('.github-btn');
+githubBtns.forEach(function(btn){
+  btn.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = 'limegreen';
+  });
+  btn.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = 'forestgreen';
+  });
+});
