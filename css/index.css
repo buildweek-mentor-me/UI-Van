@@ -188,6 +188,11 @@ table {
   align-items: center;
   margin: 20px;
 }
+.container .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .testimonials {
   font-size: 1.6rem;
   display: flex;
