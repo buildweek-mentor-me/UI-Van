@@ -5,28 +5,6 @@
             MentorMe
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <script  >
-            function openCity(evt, cityName) {
-              // Declare all variables
-              var i, tabcontent, tablinks;
-            
-              // Get all elements with class="tabcontent" and hide them
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-            
-              // Get all elements with class="tablinks" and remove the class "active"
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-            
-              // Show the current tab, and add an "active" class to the button that opened the tab
-              document.getElementById(cityName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
-          </script>
         <link href="css/index.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Chivo|Fredoka+One" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -52,36 +30,40 @@
                         <h2>Our Team</h2>
                 </div>
                  
-                <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'Nikita')">Nikita</button>
-                  <button class="tablinks" onclick="openCity(event, 'Dylan')">Dylan</button>
-                  <button class="tablinks" onclick="openCity(event, 'Guillaume')">Guillaume</button>
-                  <button class="tablinks" onclick="openCity(event, 'Van')">Van</button>
-                  <button class="tablinks" onclick="openCity(event, 'Steve')">Steve</button>
-                </div>
-                
-                <!-- Tab content -->
-                <div id="Nikita" class="tabcontent">
-                  <div class="name">Nikita Thomas, Team Lead</div>
-                  <div class="profile">London is the capital city of England.</div>
-                </div>
-                
-                <div id="Dylan" class="tabcontent">
-                  <div class="name">Dlyan Dislers, Backend</div>
-                  <div class="profile">Paris is the capital of France.</div> 
-                </div>
+                 <div class="team">
                      
-                <div id="Guillaume" class="tabcontent">
-                  <div class="name">Guillaume Savy</div>
-                  <div class="profile">Tokyo is the capital of Japan.</div>
-                </div>
-                <div id="Van" class="tabcontent">
-                  <div class="name">Tokyo is the capital of Japan.</div>
-                </div>
-                <div id="Steve" class="tabcontent">
-                  <div class="name">Van Jordan</div>
-                  <div class="profile">Tokyo is the capital of Japan.</div>
-                </div>
+                          <div class="member">
+                                <div class="name">Nikita Thomas, Team Lead</div>
+                                <div class="member-content-1 content">
+                                        Sed varius accumsan sapien vel sodales. Morbi gravida interdum congue. Phasellus libero nisi, dignissim vitae dui dictum, posuere pretium leo. Morbi magna erat, eleifend in dignissim id, condimentum id nunc. Quisque laoreet commodo augue, sed facilisis dolor ornare sed. Donec vel dapibus elit, at tincidunt mauris.
+                                </div>
+                                <div class="nikita github-btn">View My Github</div>
+                            </div>
+                            <div class="member">
+                                   <div class="name">Dylan Dislers, Backend</div>
+                                   <div class="member-content-2 content">Aenean elementum erat nulla, sed aliquam leo tincidunt vitae. Suspendisse laoreet sed felis non pulvinar. Nullam venenatis arcu at lacus cursus commodo. </div>
+                                   <div class="dylan github-btn">View My Github</div>
+
+                                </div>
+                            <div class="member">
+                                    <div class="name">Guillaume Savy, Frontend</div>
+                                    <div class="member-content-3 content">Morbi magna erat, eleifend in dignissim id, condimentum id nunc. Quisque laoreet commodo augue, sed facilisis dolor ornare sed. Donec vel dapibus elit, at tincidunt mauris.</div>
+                                    <div class="guillaume github-btn">View My Github</div>
+                                </div>
+                                     
+                             <div class="member">
+                                    <div class="name">Steve Rollins, UI</div>
+                                    <div class="member-content-4 content">Sed ut vehicula risus. Nullam sodales elit sed ligula scelerisque maximus. Aliquam sit amet suscipit justo. Donec sollicitudin augue eu efficitur euismod. Etiam quis congue enim, dapibus egestas sem.</div>
+                                    <div class="steve github-btn">View My Github</div>
+                                </div>
+                                
+                             <div class="member">
+                                    <div class="name ">Van Jordan, UI</div>
+                                    <div class="member-content-5 content">Sed ut vehicula risus. Nullam sodales elit sed ligula scelerisque maximus. Aliquam sit amet suscipit justo. Donec sollicitudin augue eu efficitur euismod. Etiam quis congue enim, dapibus egestas sem.</div>
+                                    <div class="van github-btn">View My Github</div>
+                                </div>
+                             
+                 </div>
                 
 
                 
@@ -90,5 +72,7 @@
                    &copy; Copyright 2019 MentorMe - A Lambda School Project
                 </footer>
         </div>
+        <script src="js/main.js"></script>
+
     </body>
 </html>
