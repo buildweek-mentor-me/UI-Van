@@ -305,6 +305,9 @@ table {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.container .name {
+  font-size: 1.8rem;
+}
 .container .member {
   display: flex;
   justify-content: center;
@@ -388,6 +391,21 @@ table {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+.container .github-btn {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  background-color: forestgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 * {
   box-sizing: border-box;
