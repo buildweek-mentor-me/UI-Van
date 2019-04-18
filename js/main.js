@@ -60,5 +60,9 @@ buttons.forEach(function(btn){
   });
 });
 
-
+//button to react login page
+const loginBtn = document.querySelector('.hero-btn');
+loginBtn.addEventListener('click', function(event){
+location.href= 'https://upbeat-pike-6ab269.netlify.com/';
+});
 
