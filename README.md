@@ -1,6 +1,7 @@
 # UI-Van
 This project was built out of a previous project and therefore
-contains extraneous files. The only files used on this project
+contains extraneous files (especially the less files that I did not want to remove
+and break anything). The only files used on this project
 are about.html, features.html, and index.html
 
 ##JS Files
