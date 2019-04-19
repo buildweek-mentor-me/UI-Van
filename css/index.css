@@ -129,7 +129,7 @@ table {
 .container .logo {
   font-family: "Fredoka One";
   font-size: 3.6rem;
-  color: limegreen;
+  color: dodgerblue;
 }
 .container header {
   display: flex;
@@ -216,7 +216,7 @@ table {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.5rem;
-  color: forestgreen;
+  color: navy;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +256,7 @@ table {
   font-size: 2rem;
   border-radius: 10px;
   width: 200px;
-  background-color: limegreen;
+  background-color: dodgerblue;
   color: white;
   vertical-align: middle;
   text-align: center;
@@ -376,7 +376,7 @@ table {
   font-size: 2rem;
   border-radius: 10px;
   width: 300px;
-  background-color: forestgreen;
+  background-color: navy;
   color: white;
   display: flex;
   justify-content: center;
@@ -402,7 +402,7 @@ table {
   cursor: pointer;
   margin: 0px 0px 10px 0px;
   padding: 10px;
-  background: limegreen;
+  background: dodgerblue;
   color: #fff;
   width: 100%;
   -webkit-border-radius: 3px;
